@@ -4,6 +4,7 @@ import { StyleSheet, View } from "react-native";
 import { Tabs } from "../Tabs";
 import { Tab } from "../Tabs/Tab";
 import { Text } from "../Text";
+import { THEME } from "@/src/theme";
 
 type props = {
   navigation: NavigationProp<{}>;
@@ -30,6 +31,8 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: "100%",
+    paddingTop: THEME.styles.spacing.lg,
+    paddingHorizontal: THEME.styles.spacing.lg,
     paddingBottom: 60,
   },
 });
